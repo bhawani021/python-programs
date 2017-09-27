@@ -22,7 +22,7 @@ In multithreaded application, there are several points of execution within the s
 A program that can have two or more parts that can run concurrently.
 Each independent part of program is called a thread.
 Each thread defines a separate path of execution.
-Multithreading is a special form of mutlitasking
+Multithreading is a special form of multitasking
 
 """
 import threading

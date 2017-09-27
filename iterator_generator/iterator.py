@@ -2,7 +2,7 @@
 """
 - Any object containing __next__() method is called iterator
 - We converts a iterable objects into iterator using iter() function
-- Iterator is like a lazy factory, its will be idea and when we ask for
+- Iterator is like a lazy factory, it will be ideal and when we ask for
   value it starts to buzz and produce a single value and returns back to
   ideal state
 """
