@@ -1,36 +1,30 @@
-# Class and Object
+#!/usr/bin/env python
 import datetime
-
 
 class User(object):
 
-	location = 'Bangalore'
+    location = 'Bangalore'
 
-	def __init__(self, name):
-		self.name = name
+    def __init__(self, name):
+        self.name = name
 
-	def get_name(self):
-		return self.name
+    def get_name(self):
+        return self.name
 
-	@classmethod
-	def get_location(cls):
-		return cls.location
+    @classmethod
+    def get_location(cls):
+        return cls.location
 
-	@staticmethod
-	def get_current_time():
-		return datetime.datetime.now()
+    @staticmethod
+    def get_currnet_time():
+        return datetime.datetime.now()
 
+if __name__ == '__main__':
 
-# Initialize User class
-bhaw = User('Bhawani')
-name = bhaw.get_name()
-print(name)
+    u = User('Bhawani')
+    print(u.get_name())
 
-# Get location
-location = User.get_location()
-print(location)
+    print(User.get_currnet_time())
+    print(User.get_location())
 
-# Get current time
-current_time = User.get_current_time()
-print(current_time)
 
