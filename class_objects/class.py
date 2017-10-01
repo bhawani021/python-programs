@@ -27,5 +27,3 @@ if __name__ == '__main__':
 
     print(User.get_currnet_time())
     print(User.get_location())
-
-
