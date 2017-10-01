@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import datetime
 
+
 class User(object):
 
     location = 'Bangalore'
