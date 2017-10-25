@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 """
-Fibanacci series using recusive approach
+Fibanacci series using loop
 """
 
 
 def fib(n):
-	if n == 1 or n == 2:
-		return 1
-
-	return fib(n-1) + fib(n-2)
+	a, b = 0, 1
+	for i in range(n):
+		a, b = b, a + b
+		print(a, end=' ')
 
 
 if __name__ == '__main__':
-	print(fib(10))
+	fib(10)
+    

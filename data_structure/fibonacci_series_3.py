@@ -1,16 +1,15 @@
 #!/usr/bin/env python
 """
-Fibanacci series using generator
+Fibanacci series using recusive approach
 """
 
 
 def fib(n):
-	a, b = 0, 1
-	while a < n:
-		yield a
-		a, b = b, a + b
+	if n == 1 or n == 2:
+		return 1
+
+	return fib(n-1) + fib(n-2)
 
 
 if __name__ == '__main__':
-	f = fib(10)
-	print(list(f))
+	print(fib(10))

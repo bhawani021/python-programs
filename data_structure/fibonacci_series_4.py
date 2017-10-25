@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 """
-Fibanacci series using loop
+Fibanacci series using generator
 """
 
 
 def fib(n):
 	a, b = 0, 1
-	for i in range(n):
+	while a < n:
+		yield a
 		a, b = b, a + b
-		print(a, end=' ')
 
 
 if __name__ == '__main__':
-	fib(10)
-    
+	f = fib(10)
+	print(list(f))
