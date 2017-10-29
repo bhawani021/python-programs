@@ -48,3 +48,5 @@ if __name__ == '__main__':
 
 	# Print linked list
 	l.printList()
+
+	# Time coplexity: O(1)

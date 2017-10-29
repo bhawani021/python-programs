@@ -50,6 +50,8 @@ if __name__ == '__main__':
 	# Print after inserting a new node
 	l.printList()
 
+	# Time coplexity: O(1)
+
 
 
 
